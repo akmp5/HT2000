@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	   <title>MCS管理系统</title>
+	   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+	<frameset framespacing="0" border="0" rows="64,*,64">	
+		<frame src="./Index/top.jsp" name="top" frameborder="0" noresize scrolling="no" marginwidth="0" marginheight="0">	
+		<frameset  framespacing="0" border="0" cols="200,7,*" id="frame-body">
+			<frame src="./Index/menu.jsp" frameborder="0" id="menu-frame" name="menu" noresize scrolling="no" marginwidth="0" marginheight="0">
+			<frame src="./Index/drag.html" frameborder="0" id="drag-frame" name="drag" scrolling="no">
+			<frame src="../systemAction.do?method=getBaseInfo" frameborder="0" id="main-frame" name="main">
+		</frameset>
+		<frame src="./Index/footer.jsp" name="footer" frameborder="0" noresize scrolling="no" marginwidth="0" marginheight="0">
+	</frameset>
+</html>

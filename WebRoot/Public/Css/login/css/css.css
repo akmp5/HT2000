@@ -1,0 +1,52 @@
+body{margin:0px; padding:0px;background-color:#4DD8E6;}
+#login_frame{
+	width:667px;
+	height:406px;
+	margin:8% auto;
+	position:relative;
+	background:url(../images/frame.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#account{
+	position:relative;
+	width:178px;
+	height:21px;
+	left:490px;
+	top:146px;
+}
+#passward{
+	position:relative;
+	width:178px;
+	height:21px;
+	left:490px;
+	top:152px;
+}
+#login{
+	position:relative;
+	width:173px;
+	height:99px;
+	left:500px;
+	top:166px;
+}
+#login_submit input{width: 77px; height:30px; background:url(../images/button2.gif) no-repeat 0px 0px;  border: 0px none; line-height:30px; text-align:center; font-size: 14px; color: #fff;}
+#login_submit input:hover{background-position:0px -30px; color: #41d7e6;}
+.login-input{
+	clear:both;
+	width:164px;
+	height:28px;
+	background-image:url(../images/input.gif);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	position:relative;
+}
+.login-input:hover {
+	background-position: 0px -28px;
+}
+.login-input input{
+	width:140px;
+	height:14px;
+	line-height: 14px;
+	margin: 4px;
+	border: 0px none;	
+}

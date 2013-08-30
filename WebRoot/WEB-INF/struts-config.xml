@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans />
+  <global-exceptions />
+  <action-mappings>
+  	<action path="/taskAction" parameter="method" type="com.ht2000.struts.TaskAction">
+  		<forward name="getAllTaskList" path="/Pages/Task/allTaskList.jsp" redirect="true"></forward>
+  	    <forward name="taskIOInfo" path="/Pages/SystemInfo/taskIOInfo.jsp" redirect="true"></forward>
+  	    <forward name="getDirInfo" path="/Pages/LocalFile/allFileList.jsp" redirect="true"></forward>
+  	</action>
+    <action path="/abrAction" parameter="method" type="com.ht2000.struts.AbrAction">
+  		<forward name="getAllAbrList" path="/Pages/Abr/allAbrList.jsp" redirect="true"></forward>
+  	</action>
+    <action path="/mosaicAction" parameter="method" type="com.ht2000.struts.MosaicAction">
+  		<forward name="getAllMosaicList" path="/Pages/Mosaic/allMosaicList.jsp" redirect="true"></forward>
+  	</action>
+  	<action path="/systemAction" parameter="method" type="com.ht2000.struts.SystemAction">
+  		<forward name="baseInfo" path="/Pages/SystemInfo/baseInfo.jsp" redirect="true"></forward>
+  	    <forward name="licenseInfo" path="/Pages/SystemInfo/licenseInfo.jsp" redirect="true"></forward>
+  	</action>
+  	<action path="/userAction" parameter="method" type="com.ht2000.struts.UserAction">
+  		<forward name="login" path="/login.jsp"></forward>
+  		<forward name="getAllUserList" path="/Pages/User/allUserList.jsp" redirect="true"></forward>
+  		<forward name="updateUser" path="/Pages/User/updateUser.jsp" redirect="true"></forward>
+  	</action>
+  	<action path="/updateAction" parameter="method" type="com.ht2000.struts.UpdateAction">
+  	</action>
+  	<action path="/backupAction" parameter="method" type="com.ht2000.struts.BackupAction">
+  	  <forward name="getAllBackupList" path="/Pages/Backup/allBackupList.jsp" redirect="true"></forward>
+  	</action>
+   	<action path="/settingAction" parameter="method" type="com.ht2000.struts.SettingAction">
+  	</action>
+  </action-mappings>
+  <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

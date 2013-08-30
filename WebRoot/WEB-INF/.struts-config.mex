@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/taskAction.do" location="50,50" dimension="219,96" />
+  <StrutsActivity path="/abrAction.do" location="50,1050" dimension="217,104" />
+  <StrutsActivity path="/systemAction.do" location="650,250" dimension="223,96" />
+  <StrutsActivity path="/userAction.do" location="350,450" dimension="237,96" />
+  <StrutsActivity path="/updateAction.do" location="650,1050" dimension="239,104" />
+  <StrutsActivity path="/backupAction.do" location="950,1050" dimension="239,104" />
+  <StrutsActivity path="/settingAction.do" location="350,1250" dimension="236,104" />
+  <StrutsActivity path="/Pages/SystemInfo/taskIOInfo.jsp" location="1250,650" dimension="227,53" />
+  <StrutsActivity path="/Pages/LocalFile/allFileList.jsp" location="1250,1050" dimension="202,53" />
+  <StrutsActivity path="/Pages/Task/allTaskList.jsp" location="50,250" dimension="188,51" />
+  <StrutsActivity path="/Pages/Abr/allAbrList.jsp" location="350,1050" dimension="176,53" />
+  <StrutsActivity path="/Pages/SystemInfo/licenseInfo.jsp" location="1250,450" dimension="228,53" />
+  <StrutsActivity path="/Pages/SystemInfo/baseInfo.jsp" location="950,650" dimension="217,51" />
+  <StrutsActivity path="/login.jsp" location="950,450" dimension="86,51" />
+  <StrutsActivity path="/Pages/User/allUserList.jsp" location="50,850" dimension="188,51" />
+  <StrutsActivity path="/Pages/User/updateUser.jsp" location="350,850" dimension="197,51" />
+  <StrutsActivity path="/Pages/Backup/allBackupList.jsp" location="50,1250" dimension="220,53" />
+  <StrutsActivity path="/allUserList.jsp" location="650,1250" dimension="116,53" />
+  <StrutsActivity path="/error.html" location="650,450" dimension="95,51" />
+  <StrutsActivity path="/Pages/SystemInfo/systemInfo.jsp" location="50,450" dimension="229,51" />
+  <StrutsActivity path="/index.html" location="50,650" dimension="96,51" />
+  <StrutsActivity path="/Pages/Task/addTask.jsp" location="350,250" dimension="179,51" />
+  <StrutsActivity path="/Pages/Task/addTask.html" location="950,50" dimension="187,51" />
+  <StrutsActivity path="" location="350,50" dimension="32,51" />
+  <StrutsActivity path="/Pages/" location="650,50" dimension="77,51" />
+  <StrutsActivity path="/Pages/SystemInfo/allTaskList.jsp" location="950,250" dimension="225,51" />
+  <StrutsActivity path="/Pages/SystemInfo/netionInfo.jsp" location="350,650" dimension="225,51" />
+  <StrutsActivity path="/Pages/SystemInfo/cpuInfo.jsp" location="650,650" dimension="210,51" />
+  <StrutsActivity path="/index.jsp" location="650,850" dimension="88,51" />
+  <StrutsActivity path="/Pages/index.html" location="950,850" dimension="136,51" />
+  <StrutsActivity path="Pages/LocalFile/allFileList.jsp" location="1250,850" dimension="197,53" />
+  <StrutsActivity path="/Pages/User//allUserList.jsp" location="950,1250" dimension="193,53" />
+  <StrutsActivity path="/Pages/Task/allFileList.jsp" location="1250,1250" dimension="180,53" />
+  <StrutsActivity path="/Pages/Task/taskDetail.jsp" location="50,1450" dimension="186,53" />
+  <StrutsActivity path="/mosaicAction.do" location="350,1450" dimension="204,104" />
+  <StrutsActivity path="/Pages/Abr/allMosaicList.jsp" location="1550,550" dimension="197,53" />
+  <StrutsActivity path="/Pages/Mosaic/allMosaicList.jsp" />
+  <StrutsTransition id="/taskAction.do,getDirInfo,/Pages/LocalFile/allFileList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="269,86" />
+      <AbsolutePoint location="294,86" />
+      <AbsolutePoint location="294,978" />
+      <AbsolutePoint location="1351,978" />
+      <AbsolutePoint location="1351,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/taskAction.do,getAllTaskList,/Pages/Task/allTaskList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="144,146" />
+      <AbsolutePoint location="144,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/taskAction.do,taskIOInfo,/Pages/SystemInfo/taskIOInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="269,116" />
+      <AbsolutePoint location="1234,116" />
+      <AbsolutePoint location="1234,676" />
+      <AbsolutePoint location="1250,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mosaicAction.do,getAllAbrList,/Pages/Abr/allAbrList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="554,1502" />
+      <AbsolutePoint location="602,1502" />
+      <AbsolutePoint location="602,1076" />
+      <AbsolutePoint location="526,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mosaicAction.do,getAllMosaicList,/Pages/Abr/allMosaicList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="554,1502" />
+      <AbsolutePoint location="1648,1502" />
+      <AbsolutePoint location="1648,603" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backupAction.do,getAllBackupList,/Pages/Backup/allBackupList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1069,1154" />
+      <AbsolutePoint location="1069,1199" />
+      <AbsolutePoint location="160,1199" />
+      <AbsolutePoint location="160,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mosaicAction.do,getAllMosaicList,/Pages/Mosaic/allMosaicList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="452,1502" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mosaicAction.do,getAllAbrList,/Pages/Abr/allMosaicList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="554,1502" />
+      <AbsolutePoint location="1648,1502" />
+      <AbsolutePoint location="1648,603" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userAction.do,getAllUserList,/Pages/User/allUserList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="468,498" />
+      <AbsolutePoint location="144,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/systemAction.do,licenseInfo,/Pages/SystemInfo/licenseInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="791,346" />
+      <AbsolutePoint location="791,591" />
+      <AbsolutePoint location="1364,591" />
+      <AbsolutePoint location="1364,503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userAction.do,updateUser,/Pages/User/updateUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="587,456" />
+      <AbsolutePoint location="632,456" />
+      <AbsolutePoint location="632,875" />
+      <AbsolutePoint location="547,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/systemAction.do,baseInfo,/Pages/SystemInfo/baseInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="873,316" />
+      <AbsolutePoint location="1058,316" />
+      <AbsolutePoint location="1058,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userAction.do,login,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="468,450" />
+      <AbsolutePoint location="468,421" />
+      <AbsolutePoint location="963,421" />
+      <AbsolutePoint location="963,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/abrAction.do,getAllAbrList,/Pages/Abr/allAbrList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="267,1076" />
+      <AbsolutePoint location="350,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
